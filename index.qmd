@@ -11,12 +11,14 @@ format:
     footer: LMU Open Science Center
     slide-number: true
     logo: assets/logos/OSC_Logo.jpg
+    filters: 
+      - timer
   pdf:
     output-file: core-didactic-principles-pdf.pdf
     geometry: 
       - top=30mm
       - left=30mm
-  osc-brand-pptx: default
+  # osc-brand-pptx: default
 
 bibliography: assets/references.bib
 csl: assets/apa.csl
@@ -25,9 +27,6 @@ execute:
   echo: true
   eval: true
   engine: knitr
-
-# filters: 
-#   - timer
 ---
 
 ## Prerequisites
