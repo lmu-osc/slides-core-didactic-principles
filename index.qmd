@@ -4,28 +4,30 @@ author: "Sarah von Grebmer zu Wolfsthurn"
 date: "today"
 date-format: "DD/MM/YYYY"
 format: 
+  html: default
   revealjs:
-    css: ../../assets/slides-custom.css
+    css: assets/slides-custom.css
+    output-file: core-didactic-principles-revealjs.html
     footer: LMU Open Science Center
     slide-number: true
-    logo: /assets/logos/OSC_Logo.jpg
+    logo: assets/logos/OSC_Logo.jpg
   pdf:
+    output-file: core-didactic-principles-pdf.pdf
     geometry: 
       - top=30mm
       - left=30mm
- # pptx: 
- #   css: ../../../slides-custom.css # looks for css file in root
+  osc-brand-pptx: default
 
-bibliography: ../../assets/references.bib
-csl: ../../assets/apa.csl
+bibliography: assets/references.bib
+csl: assets/apa.csl
 
 execute:
   echo: true
   eval: true
   engine: knitr
 
-filters: 
-  - timer
+# filters: 
+#   - timer
 ---
 
 ## Prerequisites
