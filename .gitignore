@@ -64,4 +64,4 @@ _site/
 
 # ignore posi assistant settings
 .posit/assistant
-/.luarc.json
+.luarc.json
