@@ -4,11 +4,10 @@ author: "Sarah von Grebmer zu Wolfsthurn"
 date: "today"
 date-format: "DD/MM/YYYY"
 format: 
-  osc-brand-html:
-    toc: true
+  osc-brand-html: default
   revealjs:
     css: assets/slides-custom.css
-    output-file: core-didactic-principles-revealjs.html
+    output-file: slides-core-didactic-principles-revealjs.html
     footer: LMU Open Science Center
     slide-number: true
     logo: assets/logos/OSC_Logo.jpg
@@ -16,10 +15,8 @@ format:
       - timer
   pdf:
     output-file: core-didactic-principles-pdf.pdf
-    geometry: 
-      - top=30mm
-      - left=30mm
-  osc-brand-pptx: default
+  osc-brand-pptx:
+    output-file: slides-core-didactic-principles-pptx.pptx
 
 bibliography: assets/references.bib
 csl: assets/apa.csl
@@ -32,15 +29,13 @@ execute:
 
 ## Prerequisites
 
-::: {.callout-important}
-Before completing this session, please carefully read about the prerequisites.
-:::
-
-<div style="font-size: 0.8em;">
 | Prerequisite   |  Description  | Where to find this  |
 |------------|------------|------------|
 | Familiarity with Open Research concepts and practices | Examples: Replication crisis, open access, R, version control, preregistration, etc.| [Click here to get familiar with Open Research first](https://lmu-osc.github.io/training/self-learning.html) |
-</div>
+
+::: {.callout-important}
+Before completing this session, please carefully read about the prerequisites.
+:::
 
 
 ::: {.notes}
@@ -80,20 +75,29 @@ Before you get started on this session with your audience, you need to ensure th
 :::
 
 
+::: {.content-visible when-format="revealjs"}
 :::footer
 https://icons8.com/
+:::
 :::
 
 ---
 
 ### How much teaching experience do you have?
 
+::: columns
+::: {.column width="40%"}
+
 - Workshops, peer training, (guest) lectures, seminars, lab presentations etc. on **open research** topics
 
-<br>
-<br>
+:::
+
+::: {.column width="60%"}
 
 ![](images/experience-spectrum.png){width="100%" fig-align="center" fig-alt="image of a horizontal axis ranging from no teaching experience to a lot of teaching experience"}
+
+:::
+:::
 
 ::: {.notes}
 **Instructor Notes**: *For in-person learners*: Get people to stand along an imaginary line across the room based on how much teaching experience they have. *For online learners*: Ask them to indicate experience on the screen. Pick out several people on either end of the spectrum and have them explain their teaching experience. Next, pick some people around the middle and have them explain and compare their experiences. Involve your audience as early as possible, so that they pay attention in case they unexpectedly get called upon. 
@@ -103,12 +107,19 @@ https://icons8.com/
 
 ### How much have you already thought about didactics?
 
+::: columns
+::: {.column width="40%"}
+
 - If and when you teach about open research, do you or would you consider **didactic elements** in you design and/or teaching style..?
 
-<br>
-<br>
+:::
+
+::: {.column width="60%"}
 
 ![](images/didactics-thoughts-spectrum.png){width="100%" fig-align="center" fig-alt="image of a horizontal axis ranging from not thought about didactics yet to routinely think about didactics"}
+
+:::
+:::
 
 ::: {.notes}
 **Presenter Notes**: Next, let us think a little more about "didactics" or "pedagogy". If and when you teach, how often do you think about didactics? What do you connect with that term?
@@ -120,12 +131,19 @@ https://icons8.com/
 
 ### How big are your teaching/training audiences?
 
+::: columns
+::: {.column width="40%"}
+
 - i.e., what is the average group size you teach in open research? (< 5 people = very small, > 100 people = very large)
 
-<br>
-<br>
+:::
+
+::: {.column width="60%"}
 
 ![](images/audience.png){width="100%" fig-align="center"}
+
+:::
+:::
 
 ::: {.notes}
 **Presenter Notes**: Finally, how big are your training audiences? How many people are in the room with you, virtually or in person? What kind of group would this be?
@@ -137,6 +155,7 @@ https://icons8.com/
 
 ## Survey time!
 
+::: {.content-visible when-format="revealjs"}
 ::: {.panel-tabset}
 
 ### Question 1
@@ -180,6 +199,55 @@ c. I have a basic understanding and sometimes implement them in my teaching.
 d. I am very familiar and have routinely applied them in my teaching.
 
 :::
+:::
+
+::: {.content-visible when-format="pptx"}
+
+### Survey time! (Question 1)
+
+**Which of the following concepts or skills do you feel most confident about in relation to didactics and teaching? (Select all that apply)**
+
+a. Considering the learner's prior knowledge in the learning process
+
+b. Constructivism
+
+c. Constructive alignment
+
+d. Mental model of skills acquisition
+
+e. Formulating clear learning objectives
+
+f. None of the above
+
+---
+
+### Survey time! (Question 2)
+
+**What is your level of familiarity with constructive alignment?**
+
+a. I have never heard of it before.
+
+b. I have heard of it but have never implemented it in my teaching.
+
+c. I have a basic working definition in mind and sometimes implement it in my teaching.
+
+d. I am very familiar and have routinely applied this framework in my teaching.
+
+---
+
+### Survey time! (Question 3)
+
+**What is your level of familiarity with the three learning domains (cognitive, affective and psychomotor)?**
+
+a. I have never heard of them before.
+
+b. I have heard of them but have never considered them in my teaching.
+
+c. I have a basic understanding and sometimes implement them in my teaching.
+
+d. I am very familiar and have routinely applied them in my teaching.
+
+:::
 
 ---
 
@@ -203,7 +271,14 @@ What do we see in the results?
 
 ## Today's session journey
 
-![](images/journey.png){width="50%" fig-align="center" fig-alt="Pictogram of journey"}
+::: columns
+::: {.column width="40%"}
+
+![](images/journey.png){width="100%" fig-align="center" fig-alt="Pictogram of journey"}
+
+:::
+
+::: {.column width="60%"}
 
 <div style="background-color: #f0f0f0; padding: 0.1em; border-radius: 5px; font-size: 0.8em; text-align: center;">
 
@@ -215,6 +290,9 @@ to
 
 **I feel more confident that I can pass on my knowledge of open research to my learners using evidence-based didactic methods.**
 </div>
+
+:::
+:::
 
 ::: {.notes}
 **Presenter Notes**: Before we start, I would like to give you an overview of where we are going today. We will discuss this a little more later, but maybe some of you are here thinking, hm, I am unsure what it really means to do "good" teaching of open research topics. By the end of today, the plan is to boost your confidence in terms of your teaching skills and guide you step-by-step towards a great level of confidence, that you can pass your knowledge of open research on to novice learners through evidence-based practice. 
@@ -303,6 +381,9 @@ Notice that I have highlighted the verbs in bold, we will come back to this late
 
 ## What *is* didactics?
 
+::: columns
+::: {.column width="70%"}
+
 > Origins in Ancient Greek
 
 | Greek | Transliteration | Meaning |
@@ -311,10 +392,19 @@ Notice that I have highlighted the verbs in bold, we will come back to this late
 | **διδακτός** | *didaktos* | taught |
 | **διδακτικός** | *didaktikos* | apt to teach; able to teach |
 
-![](images/greek.png){width="20%" fig-align="center" fig-alt="icon of Greek temple ruins"}
+:::
 
+::: {.column width="30%"}
+
+![](images/greek.png){width="100%" fig-align="center" fig-alt="icon of Greek temple ruins"}
+
+:::
+:::
+
+::: {.content-visible when-format="revealjs"}
 :::footer
 Liddell et al. (1996). *A Greek–English Lexicon*. Oxford University Press.
+:::
 :::
 
 ::: {.notes}
@@ -337,8 +427,10 @@ Today, this definition has expanded a little, as we will see next.
 "...includes **teaching and learning strategies** [...] referring to the **design**, programming, elaboration and **formulation** of **learning contents** in verbal or written form." <br> [@casasolariveraPapelDidacticaProcesos2020]
 </div>
 
+::: {.content-visible when-format="revealjs"}
 :::footer
 @casasolariveraPapelDidacticaProcesos2020; @duitDidaktik2015; Dolch, 1967: @riskulovaTheRoleofDidactics2020
+:::
 :::
 
 ::: {.notes}
@@ -349,17 +441,27 @@ Today, this definition has expanded a little, as we will see next.
 
 ## Didactics ...
 
-<br>
+::: columns
+::: {.column width="60%"}
 
 <div style="background-color: #f0f0f0; padding: 0.1em; border-radius: 5px; font-size: 1em; text-align: center;">
 “... encompasses questions about the **selection of knowledge, teaching methods**, and how learning takes place in different **contexts**. It can be seen as the **planning, implementation, and analysis of teaching**, with a particular focus on **why certain objectives, content, and methods are chosen**."
 </div>
 
+:::
+
+::: {.column width="40%"}
+
 ![](images/didactics.png){width="100%" fig-align="center" fig-alt="icon of learning materials: books and pencils"}
 
+:::
+:::
 
+
+::: {.content-visible when-format="revealjs"}
 :::footer
 @ 2026 [Stockholm University](https://www.su.se/english/research/research-catalogue/research-subjects/d/didactics)
+:::
 :::
 
 ::: {.notes}
@@ -392,8 +494,10 @@ What do you **connect** with this concept? First thoughts? Assumptions? Expectat
 </div>
 
 
+::: {.content-visible when-format="revealjs"}
 :::footer
 See @lovettHowLearningWorks2023 and @efgiviaAnalysisConstructivismLearning2021. Slide adapted from Laura Carter: "Evidence-based Training" [https://zenodo.org/records/18905547](https://zenodo.org/records/18905547). Slide originally licensed under CC BY 4.0: [https://creativecommons.org/licenses/by/4.0/](https://creativecommons.org/licenses/by/4.0/)  
+:::
 :::
 
 ::: {.notes}
@@ -444,8 +548,10 @@ The **learning context matters**!
   
 :::
 
+::: {.content-visible when-format="revealjs"}
 :::footer
 @fosnotConstructivismTheoryPerspectives2013
+:::
 :::
 
 ::: {.notes}
@@ -474,8 +580,10 @@ The **learning context matters**!
 </div>
 
 
+::: {.content-visible when-format="revealjs"}
 :::footer
 @fosnotConstructivismTheoryPerspectives2013
+:::
 :::
 
 ::: {.notes}
@@ -542,8 +650,10 @@ How does your **experience** with a topic differ when you are an expert compared
 
 </div>
 
+::: {.content-visible when-format="revealjs"}
 :::footer
 Write down your thoughts. Take 3 minutes for this exercise.
+:::
 :::
 
 ::: {.notes}
@@ -560,11 +670,10 @@ Write down your thoughts. Take 3 minutes for this exercise.
 
 ![](images/stages-skills-acquisition.png){width="100%" fig-align="center" fig-alt="graphic depicting three persons, each representing a stage of learner: novice, competent practitioner, expert"}
 
-<br>
-<br>
-
+::: {.content-visible when-format="revealjs"}
 :::footer
 [https://carpentries.github.io/instructor-training/02-practice-learning.html](https://carpentries.github.io/instructor-training/02-practice-learning.html)
+:::
 :::
 
 ::: {.notes}
@@ -587,11 +696,10 @@ Next, we will briefly explore the nature of “knowledge” through a concept th
 
 ![](images/models_learners.png){width="120%" fig-align="center" fig-alt="figure representing the mental models of the three type of learners: novices, competent practitioners, experts"}
 
-<br>
-<br>
-
+::: {.content-visible when-format="revealjs"}
 :::footer
 [https://carpentries.github.io/instructor-training/04-expertise.html](https://carpentries.github.io/instructor-training/04-expertise.html)
+:::
 :::
 
 ::: {.notes}
@@ -608,32 +716,11 @@ An expert has a densely populated and connected mental model that is especially 
 
 ### Example: A mental model of acquiring Open Access skills
 
-<table style="font-size: 0.70em; width: 100%;">
-<thead>
-<tr>
-<th style="width: 20%;">Level</th>
-<th style="width: 40%;">Can do✅</th>
-<th style="width: 40%;">Cannot (yet) do❌</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>Novice learners</strong></td>
-<td>Recognize that Open Access and publishing licenses exist</td>
-<td>Identify different publishing licenses or explain their effects on authors and readers</td>
-</tr>
-<tr>
-<td><strong>Competent practitioners</strong></td>
-<td>Knows which "default licenses" are a good choice for most typical cases</td>
-<td>Explain specific details of licences or handle "untypical" licensing cases</td>
-</tr>
-<tr>
-<td><strong>Experts</strong></td>
-<td>Strategically select and apply Open Access routes (Gold, Green, Diamond); choose Creative Commons licenses based on reuse goals; support and train others</td>
-<td>—</td>
-</tr>
-</tbody>
-</table>
+| Level | Can do ✅ | Cannot (yet) do ❌ |
+|-------|----------------|-----------|
+| **Novice learners** | Recognize that Open Access and publishing licenses exist | Identify different publishing licenses or explain their effects on authors and readers |
+| **Competent practitioners** | Knows which "default licenses" are a good choice for most typical cases | Explain specific details of licences or handle "untypical" licensing cases |
+| **Experts** | Strategically select and apply Open Access routes (Gold, Green, Diamond); choose Creative Commons licenses based on reuse goals; support and train others | — |
 
 ::: {.notes}
 **Presenter Notes**: Taking Open Access skills as an example.
@@ -657,8 +744,10 @@ An expert has a densely populated and connected mental model that is especially 
 3. **Provide at least two concrete examples** of how the organization of knowledge differs among these types of learners. 
 </div>
 
+::: {.content-visible when-format="revealjs"}
 :::footer
 Write down your thoughts. Take 8 minutes for this exercise.
+:::
 :::
 
 ::: {.notes}
@@ -746,6 +835,9 @@ Can you identify things that would help you with
 
 Some strategies ...
 
+::: columns
+::: {.column width="80%"}
+
 :::incremental
 - Provide learners with a **big picture** or outline of your workshop/course
 - Clearly **lay out expectations or objectives** for a session
@@ -757,7 +849,14 @@ Some strategies ...
 
 :::
 
+:::
+
+::: {.column width="20%"}
+
 ![](images/picture-in-picture.png){width="100%" fig-align="center" fig-alt="icon of picture in picture"}
+
+:::
+:::
 
 ::: {.notes}
 **Presenter Notes**: Some strategies could be:
@@ -803,8 +902,10 @@ Clear objectives provide direction and intentionality, making them especially im
 “... describes what **learners should be able to do** after instruction and should specify the **intended performance**, **conditions**, and **criteria for success**."
 </div>
 
+::: {.content-visible when-format="revealjs"}
 :::footer
 @mager1962preparing
+:::
 :::
 
 ::: {.notes}
@@ -847,12 +948,24 @@ When preparing a teaching unit, it is important to gain an overview of the locat
 
 ## Constructive alignment
 
+::: columns
+::: {.column width="40%"}
+
 > Focus on **learning objectives**: what do we want our learners to **achieve**?
+
+:::
+
+::: {.column width="60%"}
 
 ![](images/constructive-alignment.png){width="100%" fig-align="center" fig-alt="figure depicting the pyramid of constructive alignment, with assessment tasks and teaching activities as separate elements on the bottom layer, and learning objectives as the top layer, all connected through arrows"}
 
+:::
+:::
+
+::: {.content-visible when-format="revealjs"}
 :::footer
 @biggsEnhancingTeachingConstructive1996
+:::
 :::
 
 ::: {.notes}
@@ -867,13 +980,25 @@ Learning is constructed by what activities the learners carry out; learning is a
 
 ## Constructive alignment
 
+::: columns
+::: {.column width="40%"}
+
 > Example in an **Open Research** context
+
+:::
+
+::: {.column width="60%"}
 
 ![](images/constructive-alignment-preprint-example.png){width="100%" fig-align="center" fig-alt="figure depicting the pyramid of constructive alignment, with assessment tasks and teaching activities as separate elements on the bottom layer, and learning objectives as the top layer, all connected through arrows illustrated via the example of compiling metadata for a preprint as learning objective"}
 
+:::
+:::
 
+
+::: {.content-visible when-format="revealjs"}
 :::footer
 @biggsEnhancingTeachingConstructive1996
+:::
 :::
 
 ::: {.notes}
@@ -897,8 +1022,10 @@ On the following slide, match each **learning objective** with an **assessment t
 
 </div>
 
+::: {.content-visible when-format="revealjs"}
 :::footer
 Work in pairs. Take 8 minutes for this activity.
+:::
 :::
 
 ::: {.notes}
@@ -909,17 +1036,17 @@ Work in pairs. Take 8 minutes for this activity.
 
 ## Practical activity
 
-<div style="font-size: 0.8em;">
 | Learning objective | Assessment task |
 |---------------|--------------------|
 | A: *Create* a reproducible research pipeline | 1: Hand in a brief  essay on Green open access along with two ethical benefits and two challenges  |
 | B: *Apply* FAIR data principles to a dataset| 2: Generate a GitHub project and add project documentation (README) |
 | C: *Analyze* reproducibility issues in published studies | 3: Create a metadata record that is machine-readable  |
 | D:  *Understand* ethical implications of open access | 4: Write a critical review of the methods section of an open access paper |
-</div>
 
+::: {.content-visible when-format="revealjs"}
 :::footer
 Work in pairs. Take 8 minutes for this activity.
+:::
 :::
 
 ::: {.notes}
@@ -952,8 +1079,10 @@ Luckily, there is a framework that can help us with this even more.
 | **Affective** | Growth in feelings or emotional areas (attitude or self), values |
 | **Psychomotor** | Manual or physical skills, change in behaviors |
 
+::: {.content-visible when-format="revealjs"}
 :::footer
 @stapleton2023bloom
+:::
 :::
 
 ::: {.notes}
@@ -991,8 +1120,10 @@ The teaching activity supports this by having learners compare real research wor
 
 ![](images/cognitive-domain.png){width="100%" fig-align="center" fig-alt="pyramid of Blooms taxonomy"}
 
+::: {.content-visible when-format="revealjs"}
 :::footer
 @andersonTaxonomyLearningTeaching2001
+:::
 :::
 
 ::: {.notes}
@@ -1026,8 +1157,10 @@ At the **Create** level, learners produce new work by combining knowledge in ori
 
 :::
 
+::: {.content-visible when-format="revealjs"}
 :::footer
 @krathwohl1964taxonomy
+:::
 :::
 
 ::: {.notes}
@@ -1046,8 +1179,10 @@ Finally, the assessment task is a reflection essay. Here, learners summarize the
 
 ![](images/affective-domain.png){width="100%" fig-align="center" fig-alt="pyramid of levels of affective learning domain"}
 
+::: {.content-visible when-format="revealjs"}
 :::footer
 @krathwohl1964taxonomy
+:::
 :::
 
 ::: {.notes}
@@ -1077,8 +1212,10 @@ Finally, the assessment task is a reflection essay. Here, learners summarize the
 
 :::
 
+::: {.content-visible when-format="revealjs"}
 :::footer
 @harrow1972taxonomy
+:::
 :::
 
 ::: {.notes}
@@ -1097,8 +1234,10 @@ For Open Science, it is a little harder to find a good example. Let's take corre
 
 ![](images/psychomotor-domain.png){width=100%, fig-align="center"}
 
+::: {.content-visible when-format="revealjs"}
 :::footer
 @simpson1985educational
+:::
 :::
 
 ::: {.notes}
@@ -1112,8 +1251,6 @@ For Open Science, it is a little harder to find a good example. Let's take corre
 - Adaptation: Performs task or objective and can modify actions to account for new or problematic situations.
 - Origination: Create new procedures and solutions to approach various situations.
 :::
-
---
 
 ## Recap: Learning objectives within learning domains
 
@@ -1158,8 +1295,10 @@ You are tasked to design a course module on Open Research practices and would li
 
 </div>
 
+::: {.content-visible when-format="revealjs"}
 :::footer
 Work in pairs. Take 10 minutes for this activity.
+:::
 :::
 
 ::: {.notes}
@@ -1188,8 +1327,10 @@ Take 10 minutes for this activity.
 
 3. Using Bloom's taxonomy, **formulate two learning objectives** and **assessment methods** that match the content and the teaching activities of the tutorial.  Consider the following: Which level of Bloom's taxonomy are you at and which domain are you targeting?
 
+::: {.content-visible when-format="revealjs"}
 :::footer
 Work in pairs, Take 10 minutes for this activity.
+:::
 :::
 
 ::: {.notes}
@@ -1243,6 +1384,7 @@ Place a particular **emphasis on the verbs** when formulating learning objective
 
 ## Survey time!
 
+::: {.content-visible when-format="revealjs"}
 ::: {.panel-tabset}
 
 ### Question 1
@@ -1277,6 +1419,59 @@ d. 2
 e. 1
 
 ### Question 3
+
+**What is your level of confidence with the three learning domains (cognitive, affective and psychomotor), on a scale from 1 - 5?** *(1 = not confident at all, 5 = extremely confident)*
+
+a. 5
+
+b. 4
+
+c. 3
+
+d. 2
+
+e. 1
+
+:::
+:::
+
+::: {.content-visible when-format="pptx"}
+
+### Survey time! (Question 1)
+
+**Which of the following concepts or skills do you now feel most confident about in relation to didactics and teaching? (Select all that apply)**
+
+a. Considering the learner's prior knowledge in the learning process
+
+b. Constructivism
+
+c. Constructive alignment
+
+d. Mental model of skills acquisition
+
+e. Formulating clear learning objectives
+
+f. None of the above
+
+---
+
+### Survey time! (Question 2)
+
+**What is your level of confidence now with the mental model of skills acquisition, on a scale from 1 - 5?** *(1 = not confident at all, 5 = extremely confident)*
+
+a. 5
+
+b. 4
+
+c. 3
+
+d. 2
+
+e. 1
+
+---
+
+### Survey time! (Question 3)
 
 **What is your level of confidence with the three learning domains (cognitive, affective and psychomotor), on a scale from 1 - 5?** *(1 = not confident at all, 5 = extremely confident)*
 
