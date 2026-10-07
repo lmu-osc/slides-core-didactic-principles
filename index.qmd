@@ -4,7 +4,8 @@ author: "Sarah von Grebmer zu Wolfsthurn"
 date: "today"
 date-format: "DD/MM/YYYY"
 format: 
-  html: default
+  osc-brand-html:
+    toc: true
   revealjs:
     css: assets/slides-custom.css
     output-file: core-didactic-principles-revealjs.html
