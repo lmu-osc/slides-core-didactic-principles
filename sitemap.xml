@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://lmu-osc.github.io/slides-core-didactic-principles/LICENSE-CODE.html</loc>
-    <lastmod>2026-10-26T00:57:48.934Z</lastmod>
-  </url>
-  <url>
     <loc>https://lmu-osc.github.io/slides-core-didactic-principles/index.html</loc>
-    <lastmod>2026-10-26T00:57:48.963Z</lastmod>
+    <lastmod>2026-11-02T02:04:06.312Z</lastmod>
   </url>
   <url>
     <loc>https://lmu-osc.github.io/slides-core-didactic-principles/slides-core-didactic-principles-revealjs.html</loc>
-    <lastmod>2026-10-26T00:57:48.963Z</lastmod>
+    <lastmod>2026-11-02T02:04:06.312Z</lastmod>
   </url>
   <url>
     <loc>https://lmu-osc.github.io/slides-core-didactic-principles/LICENSE.html</loc>
-    <lastmod>2026-10-26T00:57:48.934Z</lastmod>
+    <lastmod>2026-11-02T02:04:06.280Z</lastmod>
+  </url>
+  <url>
+    <loc>https://lmu-osc.github.io/slides-core-didactic-principles/LICENSE-CODE.html</loc>
+    <lastmod>2026-11-02T02:04:06.280Z</lastmod>
   </url>
 </urlset>
